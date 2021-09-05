@@ -1,0 +1,47 @@
+install angular cli 1st
+=======================
+
+npm install -g @angular/cli
+
+
+to check current version
+========================
+ng version
+
+
+to create a new apps
+===================
+ng new APP_NAME
+
+to start the server [live developement server]
+===================
+ng serve 
+or u can use 
+npm start
+
+to share anonymous usage data about this project with the Angular Team at
+Google under Google’s Privacy Policy
+=======================================
+ng analytics project off
+
+component decorator
+==================
+
+Decorators or annotations are used to provide metadata about the entity where these decorators are added. Angular @Component decorator provides metadata about the class and tells Angular that the decorated class is a Component class.
+
+Angular @Component provides configuration metadata that determines how the component should be processed, instantiated, and used at runtime.
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+ ...
+ ...
+
+*As you can see selector property here specifies value as ‘app-root’ which means any <app-root></app-root> tags that are used within a template will be compiled using the AppComponent class and get the functionality as defined in the class.
+
+*templateUrl is specified as ./app.component.html which means view template is loaded from the file app.component.html in the current directory.
+
+*Using styleUrls you can specify One or more relative paths or absolute URLs for files containing CSS stylesheets to use in this component. Here ./app.component.css is specified as css file which means styling for the component is done using hello-world.component.css in the current directory. By specifying style fields like this you can associate a specific css file to a component.
