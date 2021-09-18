@@ -16,10 +16,33 @@ export class AppComponent{
   // title : String = "Spider";
 
   title = "Spider";
-  
 
+  //you can't use gthe keyword function, +=,-=, ||, && operators but in function you can use it
   add(a: number, b:number):number{
 
     return a+b;
   }
+
+  increment(number : number):number{
+    return ++number;
+  }
+  emp = {
+    id : null,
+  }
+
+  cmp ={
+    id:5
+  }
+
+  show = false;
+  myname = 'My name is spider';
+  toogle(){
+    if (this.show) {
+      this.show= false;
+    } else {
+
+      this.show = true;
+    }
+  }
+  duration = '';
 }

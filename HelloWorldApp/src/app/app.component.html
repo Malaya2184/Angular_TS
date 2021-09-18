@@ -1,8 +1,36 @@
 <div>
-  <h1>This {{title}}</h1>
+  <h2>This {{title}}</h2>
+  <h2>use of pipe operator below</h2>
+  <h2>This {{title | uppercase}}</h2>
+  <h2>This {{title | json}}</h2>
+  <!-- <h1>This {{title | date}}</h1> -->
 </div>
-<div> Enter your title here</div>
-<input type="text" [(ngModel)] = 'title'>
-<h1>
+<h2> Enter your title here</h2>
+<input type="text" [(ngModel)] = 'title' style="width: 50em; height:2em">
+<h2>
   result of 4+5 = {{add(4,5)}}
-</h1>
+  <br>
+  increment value of 10 is {{increment(10)}}
+  <br>
+  the value of empid = {{emp?.id}}
+  <br>
+  the value of cmpid = {{cmp.id+1}}
+  <br>
+  <button (click)="toogle()" style="background-color: rgb(112, 112, 159);">click me to see my name</button>
+  <br>
+  <span *ngIf = "show; else elsePart">my name is {{myname}}</span>
+  <ng-template #elsePart> you have not clicked the button yet</ng-template>
+  <br>
+  <br>
+  enter the duration between 1, 2 or 3
+  <br>
+  <input type="text" [(ngModel)] = "duration">
+  <br>
+  <span [ngSwitch] ="duration">
+    <span *ngSwitchCase = "1"> your case 1 is running</span>
+    <span *ngSwitchCase = "2"> your case 2 is running</span>
+    <span *ngSwitchCase = "3"> your case 3 is running</span>
+    <span *ngSwitchDefault = "3"> please enter a correct value</span>
+
+  </span>
+</h2>
