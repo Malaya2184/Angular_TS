@@ -16,4 +16,10 @@ export class AppComponent{
   // title : String = "Spider";
 
   title = "Spider";
+  
+
+  add(a: number, b:number):number{
+
+    return a+b;
+  }
 }
