@@ -31,6 +31,32 @@
     <span *ngSwitchCase = "2"> your case 2 is running</span>
     <span *ngSwitchCase = "3"> your case 3 is running</span>
     <span *ngSwitchDefault = "3"> please enter a correct value</span>
-
   </span>
+  <br>
+  <h3>Table one without index check</h3>
+  <table *ngFor="let name of mynameArr; let i = index">
+    <tr>
+      <td>{{i}}</td>
+      <td>{{name}}</td>
+    </tr>
+  </table>
+  <br>
+  <h3>Table two with index check</h3>
+  <table *ngFor="let name of mynameArr; let i = index">
+    <tr>
+      <td>{{i}}</td>
+      <td>{{name}}</td>
+      <span *ngIf="i==0"> ---this is 1st index yepee</span>
+    </tr>
+  </table>
+
+  <!-- the upper portion can be used as followes -->
+  <ng-template ngFor let-name [ngForOf] = "mynameArr " >
+  <table >
+    <tr>
+      <td>{{name}}</td>
+    </tr>
+  </table>
+  <br>
+</ng-template>
 </h2>

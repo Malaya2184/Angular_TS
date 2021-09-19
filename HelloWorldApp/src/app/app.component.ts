@@ -45,4 +45,5 @@ export class AppComponent{
     }
   }
   duration = '';
+  mynameArr : string[]=['malaya','spider','spider 2','spider 3']
 }
