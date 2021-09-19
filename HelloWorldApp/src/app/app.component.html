@@ -51,6 +51,7 @@
   </table>
 
   <!-- the upper portion can be used as followes -->
+  <h3>Table one without index check</h3>
   <ng-template ngFor let-name [ngForOf] = "mynameArr" let-i = index;>
   <table >
     <tr>
@@ -59,13 +60,5 @@
     </tr>
   </table>
   <br>
-  <h3>Table two with index check</h3>
-  <table *ngFor="let name of mynameArr; let i = index">
-    <tr>
-      <td>{{i}}</td>
-      <td>{{name}}</td>
-      <span *ngIf="i==0"> ---this is 1st index yepee</span>
-    </tr>
-  </table>
 </ng-template>
 </h2>
