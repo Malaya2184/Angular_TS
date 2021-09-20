@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Employee } from './employee';
 
 @Component({
@@ -7,13 +7,13 @@ import { Employee } from './employee';
   styleUrls: ['./employee.component.css']
 })
 export class EmployeeComponent implements OnInit {
-
+  @Input()
   emp!: Employee;
   constructor() { }
 
   ngOnInit(): void {
 
-    this.emp = new Employee(1,"malaya kumar swain", new Date('01/10/1996'));
+    
   }
 
 }

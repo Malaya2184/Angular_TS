@@ -1,0 +1,20 @@
+<p>employees works! for nested components</p>
+<!-- <div>
+  <table style="margin:1px; border: 1px solid black; border-collapse: separate;" >
+    <tr *ngFor = "let emp of employee">
+      <td>emp id =</td>
+      <td>{{emp.id}}</td>
+      <td>emp  name =</td>
+      <td>{{emp.name}}</td>
+      <td>emp date</td>
+      <td>{{emp.date}}</td>
+    </tr>
+
+  </table>
+</div> -->
+
+<!-- it can b achieved by this// for this @input tag must mentioned in employee component where declaration of emp object takes place -->
+<div *ngFor= "let e of employees">
+  <app-employee [emp] = "e"></app-employee>
+</div>
+
