@@ -75,11 +75,12 @@
 </select>
 </h4> -->
 
+<!-- //component outlet is somethings which holds the propeerrt of an component like a variable -->
 <div>
 <h3>life cycle component starts here</h3>
   <app-life-cycle></app-life-cycle>
 
-  <!-- //component outlet is somethings which holds the propeerrt of an component like a variable -->
   <ng-container *ngComponentOutlet = "alert"></ng-container>
   <button (click)= "switchAlert()"><h3>change the allert</h3></button>
+  <app-employee></app-employee>
 </div>
