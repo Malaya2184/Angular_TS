@@ -61,4 +61,14 @@
   </table>
   <br>
 </ng-template>
+<select name="student" id="student" [(ngModel)]="selectedStudent">
+  <ng-container *ngFor="let student of students">
+
+    <ng-container *ngIf="student != 'spider'">
+      <option [ngValue]="student">
+        {{student | uppercase}}
+      </option>
+    </ng-container>
+  </ng-container>
+</select>
 </h2>

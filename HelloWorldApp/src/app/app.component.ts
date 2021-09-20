@@ -45,5 +45,8 @@ export class AppComponent{
     }
   }
   duration = '';
-  mynameArr : string[]=['malaya','spider','spider 2','spider 3']
+  mynameArr : string[]=['malaya','spider','spider 2','spider 3'];
+
+  students: string[]=['malaya','spider','spider 2','spider 3'];
+  selectedStudent = "malaya";
 }
