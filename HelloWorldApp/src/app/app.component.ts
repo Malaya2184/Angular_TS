@@ -1,5 +1,7 @@
+import { AlertSucessComponent } from './alert-sucess/alert-sucess.component';
 // import component class from ang core
 import {Component} from '@angular/core';
+import { AlertDangerComponent } from './alert-danger/alert-danger.component';
 
 //declaration of component decorator
 @Component({
@@ -49,4 +51,16 @@ export class AppComponent{
 
   students: string[]=['malaya','spider','spider 2','spider 3'];
   selectedStudent = "malaya";
+
+// dynamic component rendering
+alert = AlertDangerComponent;
+switchAlert(){
+  if (this.alert == AlertSucessComponent) {
+    this.alert = AlertDangerComponent;
+
+  } else {
+    this.alert = AlertSucessComponent;
+  }
+}
+
 }
