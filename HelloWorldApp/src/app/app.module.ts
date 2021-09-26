@@ -8,6 +8,8 @@ import { AlertSucessComponent } from './alert-sucess/alert-sucess.component';
 import { AlertDangerComponent } from './alert-danger/alert-danger.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { StudentComponent } from './student/student.component';
+import { AllStudentComponent } from './all-student/all-student.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +17,9 @@ import { EmployeesComponent } from './employees/employees.component';
     AlertSucessComponent,
     AlertDangerComponent,
     EmployeeComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    StudentComponent,
+    AllStudentComponent
   ],
   // it is not manditory but it is a good practice to mention entry components
   entryComponents: [
