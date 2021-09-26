@@ -1,6 +1,9 @@
 <div>
-  <h2>
-    id = {{std.id}}&nbsp; name = {{std.name}}&nbsp; dob = {{std.dob}}
-  </h2>
+  <div *ngIf = "selected; then selectedStd; else normalStd;">
+
+  </div>
+
+  <ng-template #selectedStd> <b style= "color: red;"> id = {{std.id}}&nbsp; name = {{std.name}}&nbsp; dob = {{std.dob}}</b></ng-template>
+  <ng-template #normalStd>id = {{std.id}}&nbsp; name = {{std.name}}&nbsp; dob = {{std.dob}}</ng-template>
 </div>
 

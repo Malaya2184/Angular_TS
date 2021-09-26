@@ -15,6 +15,9 @@ export class StudentComponent implements OnInit {
     // this.std = new Student(1, "malaya", new Date("01-10-1996"));
   }
 
+  @Input()
+  selected !: boolean;
+
   ngOnInit(): void {
   }
 

@@ -1,5 +1,6 @@
 <div>
-  <h2 *ngFor = "let student of allStd">
-    <app-student [std] = 'student'></app-student>
-  </h2>
+  <div *ngFor = "let student of allStd">
+    <app-student [selected]= "selectedStudent == student" [std] = 'student'></app-student>
+    <input type="button" value="select this student" (click)= selectThis(student)>
+  </div>
 </div>

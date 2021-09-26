@@ -16,6 +16,11 @@ export class AllStudentComponent implements OnInit {
     this.allStd[1] = new Student(1, "anil", new Date("02-10-1996"));
     this.allStd[2] = new Student(1, "sweta", new Date("03-10-1996"));
   }
+  selectedStudent !: Student;
+  selectThis(student: Student){
+    this.selectedStudent = student;
+
+  }
 
   ngOnInit(): void {
   }
