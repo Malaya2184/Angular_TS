@@ -10,6 +10,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { EmployeesComponent } from './employees/employees.component';
 import { StudentComponent } from './student/student.component';
 import { AllStudentComponent } from './all-student/all-student.component';
+import { MouseComponent } from './mouse/mouse.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { AllStudentComponent } from './all-student/all-student.component';
     EmployeeComponent,
     EmployeesComponent,
     StudentComponent,
-    AllStudentComponent
+    AllStudentComponent,
+    MouseComponent,
   ],
   // it is not manditory but it is a good practice to mention entry components
   entryComponents: [
