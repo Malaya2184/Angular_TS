@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, TRANSLATIONS } from '@angular/core';
 
 @Component({
   selector: 'app-mouse',
@@ -31,6 +31,18 @@ secondType="";
       this.secondType = event.type;
       event.target.src = "assets/after.jpeg";
     }
+  }
+
+  value = ""
+  keyvalue = ""
+  mykeyupfunction(event: any){
+
+    this.value = event.target.value;
+    this.keyvalue += event.key;
+  }
+  newVal="";
+  newkeyup (value:string) {
+      this.newVal = value;
   }
 
 }

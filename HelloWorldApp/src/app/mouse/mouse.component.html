@@ -2,4 +2,27 @@
 <img src="assets/after.jpeg" alt="" style="width: 200px; height: 100px" (mouseover)="mouseover($event)"  (mouseout)= "mouseout($event)">
 first event type {{eventType}}
 <img src="assets/after.jpeg" alt="" style="width: 200px; height: 100px" (mouseover)="mouse($event)"  (mouseout)= "mouse($event)">
+
+<h1>template reference</h1>
+<img #img src="assets/after.jpeg" alt="" style="width: 200px; height: 100px" (mouseover)="img.src = 'assets/after.jpeg'"  (mouseout)= "img.src = 'assets/before.jfif'">
+
+
+
+
 seconf event type {{secondType}}
+<br>
+<input type="text" (keyup)="mykeyupfunction($event)">
+<br>
+current value is : {{value}}
+<br>
+
+key pressed values are as followes :{{keyvalue}}
+
+
+<h1>keyup function called when you releses the key not when you press gthe key.</h1>
+
+<h3>template referencing with key function filtering</h3>
+<input #text type="text" (keyup.enter)="newkeyup(text.value)">
+<h2>{{newVal}}</h2>
+
+<h1>for ng model you have to give the name property to the input tag and it is manditory</h1>
