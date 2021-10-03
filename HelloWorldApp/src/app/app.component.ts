@@ -16,6 +16,7 @@ export class AppComponent{
   //you can also declair like this
 
   // title : String = "Spider";
+  mysize = 10;
 
   fname = "malaya";
   lname= "swain";
