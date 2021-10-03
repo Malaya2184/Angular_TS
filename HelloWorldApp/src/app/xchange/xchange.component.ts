@@ -6,10 +6,10 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./xchange.component.css']
 })
 export class XchangeComponent implements OnInit {
-  @Input() firstname !:String;
+  @Input("firstname-alias") firstname !:String;
   @Input() lastname !:String;
 
-  @Output() firstnameChange = new EventEmitter<string>();
+  @Output("firstname-aliasChange") firstnameChange = new EventEmitter<string>();
   @Output() lastnameChange = new EventEmitter<string>();
 
   Changefirstname(fn: string){
