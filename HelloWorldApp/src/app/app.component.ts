@@ -17,6 +17,8 @@ export class AppComponent{
 
   // title : String = "Spider";
 
+  fname = "malaya";
+  lname= "swain";
   title = "Spider";
 
   //you can't use gthe keyword function, +=,-=, ||, && operators but in function you can use it
