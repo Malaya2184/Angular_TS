@@ -1,0 +1,56 @@
+<div>
+  <!-- <h1>
+
+    my name is {{name | uppercase}}
+    <br>
+    <input type="text" [(ngModel)]="name">
+  <br>
+  result of 1 + 1 = {{1+1}}
+  <br>
+    resuult of Add(1, 3) = {{ Add(1, 3)}}
+  </h1>
+  <br>
+  <h2>
+
+    <h2 *ngIf="show; then ifpart else elsepart" ></h2>
+    <ng-template #elsepart>This is else part</ng-template>
+    <ng-template #ifpart>This is if part</ng-template>
+  </h2>
+
+<input type="button" value="Toogle me" (click)="Toogle()">
+<br>
+
+<input type="text" [(ngModel)] = "myValue" >
+<h1>
+  <span [ngSwitch]="myValue">
+    <span *ngSwitchCase="1"> Switch to 1</span>
+    <span *ngSwitchCase="2"> Switch to 2</span>
+    <span *ngSwitchCase="3"> Switch to 3</span>
+    <span *ngSwitchCase="4"> Switch to 4</span>
+    <span *ngSwitchDefault> wrong value entered</span>
+  
+  </span>
+</h1>
+<span *ngFor="let sub of subject; let i = index">
+  <span *ngIf="i!=0">,</span>
+    <span >{{sub}}</span>
+</span > -->
+
+<!-- 
+<select [(ngModel)]="selectedSub" >
+  <ng-container *ngFor="let sub of subject; let i = index">
+
+    <ng-container *ngIf="sub != 'def' ">
+      <option value="{{sub}}">
+        {{sub}}
+      </option>
+    </ng-container>
+
+  </ng-container>
+</select> -->
+
+<app-life-cycle></app-life-cycle>
+
+
+
+</div>
