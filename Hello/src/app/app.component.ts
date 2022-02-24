@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AlertSucessComponent } from './alert-sucess/alert-sucess.component';
+import { AlertDangerComponent } from './alert-danger/alert-danger.component';
 
 @Component({
   selector: 'app-root',
@@ -26,5 +28,17 @@ export class AppComponent {
 
   // subject: string[] = ['abc', 'def', 'ghi']
   // selectedSub = "abc"
+
+  alert = AlertDangerComponent;
+
+  switchAlert(){
+    if (this.alert == AlertSucessComponent) {
+      this.alert = AlertDangerComponent;
+      
+    } else {
+      this.alert = AlertSucessComponent
+      
+    }
+  }
 
 }
