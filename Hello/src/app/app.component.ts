@@ -8,6 +8,9 @@ import { AlertDangerComponent } from './alert-danger/alert-danger.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  firstName: string = "Malaya";
+  lastName: string ="Swain";
   // title = 'Hello';
   // name = "Malaya"
   // show = true;
@@ -40,5 +43,7 @@ export class AppComponent {
       
     }
   }
+
+  
 
 }

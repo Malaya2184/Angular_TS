@@ -1,0 +1,10 @@
+<p>employee works!</p>
+<div *ngIf="selected; then selectedEmp; else notslected" >
+</div>
+
+<ng-template #selectedEmp>
+    <b>emp is : {{emp.id}},name : {{emp.name}}, doj : {{emp.dateOfJoin}}, type :{{emp.empType}}</b>
+</ng-template>
+<ng-template #notslected>
+    emp is : {{emp.id}},name : {{emp.name}}, doj : {{emp.dateOfJoin}}, type :{{emp.empType}}
+</ng-template>

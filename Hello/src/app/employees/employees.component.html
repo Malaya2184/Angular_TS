@@ -1,0 +1,7 @@
+<p>employees works!</p>
+<div *ngFor="let empl of employees, let i = index">
+
+    <app-employee [emp]="empl" [selected]="selectedEmployee == empl"></app-employee>
+    <input type="button" value="select" (click)="select(empl)">
+
+</div>

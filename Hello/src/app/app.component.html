@@ -49,12 +49,27 @@
   </ng-container>
 </select> -->
 
-<app-life-cycle></app-life-cycle>
+<!-- <app-life-cycle></app-life-cycle>
 
 <ng-container *ngComponentOutlet="alert"></ng-container>
 
 <input type="button" value="switch alert" (click)="switchAlert()">
+<app-employee></app-employee>
+
+<app-employees></app-employees> -->
+
+<!-- <app-event-handle></app-event-handle> -->
+
+<h1>test box in app component</h1>
+
+<input type="text" [(ngModel)]="firstName">
+<input type="text" [(ngModel)]="lastName">
+<br>
 
 
-
+<app-input-output [firstName]="firstName" [lastName]="lastName" ></app-input-output>
+ <br>
+ <br>
+ <h1>coming from app component</h1><br>
+ first name : {{firstName}}  last name : {{lastName}}
 </div>
